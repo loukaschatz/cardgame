@@ -1,0 +1,95 @@
+header {
+    height: 80px;
+    background-color: seagreen;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 7px 10px black;
+}
+
+header h1 {
+    text-shadow: 2px 2px black;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.message {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 800px;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 30px;
+    width: 300px;
+    background-color: green;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btns {
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    width: 600px;
+    height: 40px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.cards {
+    margin: 0 500px;
+    color: black;   
+}
+
+.box {
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 10px grey;
+    width: 300px;
+    padding: 20px;
+    margin: 0 20px;
+    height: 200px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+.box h1, h2 {
+    margin: 5px 5px;
+}
