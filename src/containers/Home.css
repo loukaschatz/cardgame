@@ -13,12 +13,10 @@ header h1 {
 }
 
 .container {
-    width: 50%;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 35%;
-    left: 42%;
+    align-items: flex-start;
+    position: relative;
+    display: flex;
 }
 
 .loginCard {
@@ -26,8 +24,8 @@ header h1 {
     width: 300px;
     height: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
+    position: absolute;
+    margin-top: 100px;
 }
 
 .content {

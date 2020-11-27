@@ -83,24 +83,24 @@ class Game extends Component {
                 <header>
                     <h1>Welcome: {this.state.name}</h1><h1>Your balance is: {this.state.balance} Euros</h1>
                 </header>
-                {this.state.msg ? <p className="message">{this.state.msg}</p> : null}
                 <div className="btns">
                     {this.state.start ? <button onClick={this.forfeit} style={{ marginRight: '30px' }}>Forfeit</button> : <button onClick={this.startGame} style={{ marginRight: '30px' }} >Start Game</button>}
                     <button onClick={this.return} style={{ marginRight: '30px' }}>Logout</button>
                 </div>
                 <div className="grid-container">
-                    <div className="cards item3">
+                    <div className="cards">
                         {cards.map(card => (
                             <img src={!this.state.clicked ? card.imageBg : ''} key={card.code} width="222" alt="" onClick={() => this.onClickHandler(card.image, card.value)} />
                         ))}
                         <img src={this.state.id} width="222" alt="" />
                     </div>
-                    <div className="box item4">
+                    <div className="box">
                         <h1>Game Info</h1>
                         <h2>Round: {this.state.round}</h2>
                         <h2>Winning Pool: {this.state.winningPool}</h2>
                         <h2>Remaining Cards: {this.state.remain}</h2>
                     </div>
+                    {this.state.msg ? <p className="message">{this.state.msg}</p> : null}
                 </div>
             </>
         )
